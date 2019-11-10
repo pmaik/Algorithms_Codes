@@ -36,6 +36,7 @@ struct comp
     bool operator()(data const& s1, data const& s2)
     {
         return s1.val > s2.val;
+        // here sorting according to decreasing val 
     }
 };
 
