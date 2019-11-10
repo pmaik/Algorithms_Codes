@@ -40,8 +40,8 @@ void build_tree(int node, int a, int b)
   	
   	if(a == b)  // Leaf node
   	{ 
-    	tree[node] = arr[a]; // Init value
-		return;
+    	    tree[node] = arr[a]; // Init value
+	    return;
 	}
 	
 	build_tree(node*2, a, (a+b)/2);     // Init left child
@@ -62,8 +62,8 @@ void update_tree(int node, int a, int b, int i, int j, int value)
 
 		if(a != b) 
 		{
-			lazy[node*2] += lazy[node];       // Mark child as lazy
-    		lazy[node*2+1] += lazy[node]; // Mark child as lazy
+		     lazy[node*2] += lazy[node];       // Mark child as lazy
+    		     lazy[node*2+1] += lazy[node]; // Mark child as lazy
 		}
 
    		lazy[node] = 0; // Reset it
