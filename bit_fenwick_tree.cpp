@@ -3,7 +3,20 @@
 */
 // mega_inversion spoj_prob.
 
-#include<bits/stdc++.h>
+#include<iostream>
+#include<algorithm>
+#include<string>
+#include<bitset>
+#include<deque>
+#include<iterator>
+#include<list>
+#include<map>
+#include<queue>
+#include<set>
+#include<stack>
+#include<unordered_map>
+#include<unordered_set>
+#include<vector>
 using namespace std;
 #define ll long long int
 #define pb push_back
