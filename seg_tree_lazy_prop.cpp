@@ -14,10 +14,25 @@
 
 #include<iostream>
 #include<algorithm>
+#include<string.h>
+#include<bitset>
+#include<deque>
+#include<iterator>
+#include<list>
+#include<map>
+#include<queue>
+#include<set>
+#include<stack>
+#include<unordered_map>
+#include<unordered_set>
+#include<vector>
 using namespace std;
 
-#include<string.h>
-#include<math.h> 
+#define ll long long int
+#define pb push_back
+#define pf push_front
+#define M 1000000007
+#define fastio ios_base::sync_with_stdio(false);
 
 #define N 20
 #define MAX (1+(1<<6)) 
