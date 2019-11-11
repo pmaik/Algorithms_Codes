@@ -91,7 +91,7 @@ int main()
 			if(find(A,x,y))
 				cout<<x<<" and "<<y<<" are in same set "<<endl;
 			else
-				cout<<x<<" and "<<y<<" are not in same set "<<endl;
+				cout<<x<<" and "<<y<<" are in different sets "<<endl;
 		}
 	}
 	return 0;
