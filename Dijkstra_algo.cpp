@@ -1,7 +1,7 @@
 /*
     maneesh(maik)
 */ 
-// dijikstra algorithm(Shortest path) for undirected graph 
+// dijkstra algorithm(Shortest path) for undirected graph 
 
 #include<iostream>
 #include<algorithm>
