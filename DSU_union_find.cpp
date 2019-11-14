@@ -46,7 +46,7 @@ void unionn(ll A[], ll size[], ll a, ll b)
 		A[root_a]=A[root_b];
 		size[root_b]+=size[root_a];
 	}
-	else // make root as a 
+	else (size[root_a]>size[root_b]) // make root as a 
 	{
 		A[root_b]=A[root_a];
 		size[root_a]+=size[root_b];
