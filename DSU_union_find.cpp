@@ -83,7 +83,13 @@ int main()
 		if(op==0)
 		{
 			cin>>x>>y;
-		    unionn(A,size,x,y);
+		        ll root_x=root(A, x);
+		        ll root_y=root(A, y);
+
+		        if(root_x!=root_y)
+		        {
+			     unoinn(A, size, x, y);
+		        }
 		}
 		else if(op==1)
 		{
