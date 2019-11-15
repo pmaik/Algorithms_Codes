@@ -77,16 +77,17 @@ int main()
 
     	for(i=0; i<v[p].size(); i++)
     	{
-    		indg[v[p][i]]--;
-            if(Lnth[v[p][i]]<Lnth[p]+1)
+            ll it=v[p][i];
+    		indg[it]--;
+            if(Lnth[it]<Lnth[p]+1)
             {
-                Lnth[v[p][i]]=Lnth[p]+1;
+                Lnth[it]=Lnth[p]+1;
             }
 
-    		if(indg[v[p][i]]==0)
+    		if(indg[it]==0)
     		{
-    			q.push(v[p][i]);
-    			Topo.pb(v[p][i]);
+    			q.push(it);
+    			Topo.pb(it);
     		}
     	}
     	q.pop();
