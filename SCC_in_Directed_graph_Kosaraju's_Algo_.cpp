@@ -1,20 +1,8 @@
 /*
     maneesh(maik)
 */
-// Cycles in Directed graph using DFs 
-// Four types of edges in DFS tree 
-// 1. Tree edges, 2. Forward edges, 3. Backward edges, 4. Cross edges
-
-//**** If any one back edges exist then it must form cycle****
-
-// in Back edges for any edge (u-->v)  
-// Interval [Pre(v),Post(v)] contains [Pre(u),Post(u)].
-
-// in Forward and tree edges for any edge (u-->v)  
-// Interval [Pre(u),Post(u)] contains [Pre(v),Post(v)]
-
-// in Cross edges for any edge (u-->v)  
-// Interval [Pre(u),Post(u)] and [Pre(v),Post(v)] are Disjoint 
+// Kosaraju's Algorithm
+// Strongly connected components in Directed Graph
 
 #include<iostream>
 #include<algorithm>
