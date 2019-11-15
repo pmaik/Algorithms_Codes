@@ -41,10 +41,10 @@ ll cnt=0;
 
 struct data
 {
-	ll u,v;
+     ll u,v;
 };
 
-void DFS(ll p, ll s, ll vis[], ll start[], ll end[])
+void DFS(ll s, ll vis[], ll start[], ll end[])
 {
 	vis[s]=1;
 
@@ -55,7 +55,7 @@ void DFS(ll p, ll s, ll vis[], ll start[], ll end[])
 		if(vis[it]==0)
 		{
 			start[it]=cnt; cnt++;
-			DFS(s, it, vis, start, end);
+			DFS(it, vis, start, end);
 		}
 	}
 	end[s]=cnt; cnt++;
@@ -103,7 +103,7 @@ int main()
 		if(vis[i]==0)
 		{
 			start[i]=cnt; cnt++;
-			DFS(i, i, vis, start, end);
+			DFS(i, vis, start, end);
 		}
 	}
     
