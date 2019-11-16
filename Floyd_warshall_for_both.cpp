@@ -56,7 +56,7 @@ int main()
     {
         for(j=1; j<=n; j++)
         {
-            dist[i][j][0]=1000;
+            dist[i][j][0]=10000000000000;
             if(i==j)
             {
                 dist[i][j][0]=0;
