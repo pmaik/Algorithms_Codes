@@ -1,2 +1,2 @@
 # Algorithms_-_codes
-Important Standard Algorithms implementation 
+Important Standard Algorithm's implementation 
