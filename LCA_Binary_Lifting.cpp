@@ -210,7 +210,7 @@ int main()
                         }
                     } //cout<<endl; */
 
-                    for(i=0; i<15; i++)
+                    for(i=0; i<20; i++)
                     {
                         if( k&(1<<i))
                         {
