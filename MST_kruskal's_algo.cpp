@@ -1,7 +1,7 @@
 /*
     maneesh(maik)
 */ 
-// Prim's Algorithm 
+// Kruskal's Algorithm 
 
 #include<iostream>
 #include<algorithm>
