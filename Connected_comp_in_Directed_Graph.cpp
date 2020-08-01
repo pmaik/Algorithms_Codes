@@ -71,6 +71,10 @@ int main()
         cout<<endl;
     }*/ 
 
+    ll vis[n+1];
+    for(i=1; i<=n; i++)
+        vis[i]=0;
+
     queue<ll>q;
     for(i=1; i<=n; i++)
     {
@@ -78,6 +82,7 @@ int main()
         {
             q.push(i);
             Topo.pb(i);
+            vis[i]=1;
             // cout<<i<<" jjj\n";
         }
     }
@@ -88,27 +93,32 @@ int main()
 
         for(i=0; i<v[p].size(); i++)
         {
-            indg[v[p][i]]--;
-            if(indg[v[p][i]]==0)
+            ll it=v[p][i];
+            vis[it]=1;
+            indg[it]--;
+            if(indg[it]==0)
             {
-                q.push(v[p][i]);
-                Topo.pb(v[p][i]);
-                //cout<<v[p][i]<<" ";
+                q.push(it);
+                Topo.pb(it);
             }
         }
         q.pop();
     }
 
-    ll conn_comp=0,vis[n+1];
+    for(i=1; i<=n; ++i)
+        if(vis[i]==0)
+            Topo.pb(i);
+
+
+    ll conn_comp=0;
     for(i=1; i<=n; i++)
-    {
         vis[i]=0;
-    }
 
 
     for(i=0; i<Topo.size(); i++)
     {
         ll it=Topo[i];
+        // cout<<it<<" ";
         if(vis[it]==0)
         {
             conn_comp++;
@@ -118,8 +128,8 @@ int main()
 
     if(conn_comp==0)
         conn_comp=1;
-    
-    cout<<"no. of connected components are --> "<<conn_comp<<endl;
+
+    cout<<"\nno. of connected components are --> "<<conn_comp<<endl;
 
     return 0;
 } 
