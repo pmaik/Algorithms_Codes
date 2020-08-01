@@ -1,28 +1,30 @@
-/*
-    maneesh(maik)
-*/
+ 
 // Connected components in Directed Graph using TOPOLOGICAL Order 
 
-#include<iostream>
-#include<algorithm>
-#include<string>
-#include<bitset>
-#include<deque>
-#include<iterator>
-#include<list>
-#include<map>
-#include<queue>
-#include<set>
-#include<stack>
-#include<unordered_map>
-#include<unordered_set>
-#include<vector>
+/*
+           pmaik
+    ░▒▓█►─═ Maneesh ═─◄█▓▒░
+
+
+          ( •̪●)
+        ███████]▄▄▄▄▄▄▄▄▃  ▃  ▃ 
+    ▂▄▅█████████▅▄▃▂
+   [███████████████████]
+  ...◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙◤......  */
+
+#include<bits/stdc++.h>
 using namespace std;
+#define inf() ifstream cin("in00.txt")
+#define onf() ofstream cout("out00.txt")
 #define ll long long int
 #define pb push_back
 #define pf push_front
+#define mp make_pair
+#define pii pair<ll,ll>
+#define fi first
+#define se second
 #define M 1000000007
-#define fastio ios_base::sync_with_stdio(false);
+#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL);
 
 void DFS(ll s, ll vis[], vector<ll>v[] )
 {
@@ -44,7 +46,6 @@ int main()
 
     ll n,m;
     cin>>n>>m;
-
     ll i,x,y;
     vector<ll>Topo;
     vector<ll>v[n+1];
@@ -68,7 +69,7 @@ int main()
             cout<<v[i][j]<<" ";
         }
         cout<<endl;
-    } */
+    }*/ 
 
     queue<ll>q;
     for(i=1; i<=n; i++)
@@ -77,7 +78,7 @@ int main()
         {
             q.push(i);
             Topo.pb(i);
-            //cout<<i<<" ";
+            // cout<<i<<" jjj\n";
         }
     }
 
@@ -104,7 +105,8 @@ int main()
         vis[i]=0;
     }
 
-    for(i=0; i<n; i++)
+
+    for(i=0; i<Topo.size(); i++)
     {
         ll it=Topo[i];
         if(vis[it]==0)
@@ -114,6 +116,9 @@ int main()
         }
     }
 
+    if(conn_comp==0)
+        conn_comp=1;
+    
     cout<<"no. of connected components are --> "<<conn_comp<<endl;
 
     return 0;
