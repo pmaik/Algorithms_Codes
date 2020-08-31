@@ -86,8 +86,8 @@ void defining_ordered_set1()
 
     cout << *(st1.find_by_order(k)) <<endl;
     cout<< st1.order_of_key(num) <<endl;
-    // 1. find_by_order(k). it returns an iterator of (k+1)th element of set.
-    // 2. st.order_of_key(num). it returns count of elements strictly less than num.
+    // 1. st1.find_by_order(k). it returns an iterator of (k+1)th element of set.
+    // 2. st1.order_of_key(num). it returns count of elements strictly less than num.
     // means returns the index of num (0 based indexing). 
     
 
