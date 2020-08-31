@@ -1,4 +1,4 @@
-/*
+ /*
     Policy based data structures (PBDS) supports two additional operations
     1. st.order_of_key(num) 
     It returns count of elements which is strictly less than num. means index of num in sorted 
@@ -34,15 +34,6 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-
-#include <ext/pb_ds/assoc_container.hpp> 
-#include <ext/pb_ds/tree_policy.hpp> 
-using namespace __gnu_pbds; 
-#define ordered_set  tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update>
-#define ordered_set1 tree<int, null_type, less_equal<int>, rb_tree_tag, tree_order_statistics_node_update>
-// ordered_set1 can also contains duplicates 
-// ordered_set can not contains duplicates 
-
 #define inf() ifstream cin("in00.txt")
 #define onf() ofstream cout("out00.txt")
 #define ll long long int
@@ -54,6 +45,16 @@ using namespace __gnu_pbds;
 #define se second
 #define M 1000000007
 #define fastio ios_base::sync_with_stdio(false); cin.tie(NULL);
+
+#include <ext/pb_ds/assoc_container.hpp> 
+#include <ext/pb_ds/tree_policy.hpp> 
+using namespace __gnu_pbds; 
+#define ordered_set  tree<ll, null_type, less<ll>, rb_tree_tag, tree_order_statistics_node_update>
+#define ordered_set1 tree<ll, null_type, less_equal<ll>, rb_tree_tag, tree_order_statistics_node_update>
+// ordered_set1 can also contains duplicates 
+// ordered_set can not contains duplicates 
+
+
 
 void defining_ordered_set()
 {
@@ -117,7 +118,7 @@ void defining_ordered_set1()
 
 }
 
-void solve()
+void solve(ll tc)
 {
     ll n;
     cin>>n;
@@ -127,7 +128,6 @@ void solve()
     {
         cin>>a[i];
     }
-
 
 
 }
