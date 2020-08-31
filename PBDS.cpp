@@ -84,8 +84,8 @@ void defining_ordered_set1()
     ll num=1,k=1;
     ordered_set1 st1;
 
-    cout << *(st.find_by_order(k)) <<endl;
-    cout<< st.order_of_key(num) <<endl;
+    cout << *(st1.find_by_order(k)) <<endl;
+    cout<< st1.order_of_key(num) <<endl;
     // 1. find_by_order(k). it returns an iterator of (k+1)th element of set.
     // 2. st.order_of_key(num). it returns count of elements strictly less than num.
     // means returns the index of num (0 based indexing). 
@@ -96,24 +96,24 @@ void defining_ordered_set1()
 
     // For deleting/removing element from ordered_set1 we have to do the following:
     // Here i'm checking if it is present ... 
-    if( st.order_of_key(num)!=st.size() && ( st.order_of_key(num)==0 && num==(*st.begin())) )
+    if( st1.order_of_key(num)!=st1.size() && ( st1.order_of_key(num)==0 && num==(*st1.begin())) )
     {
-        st.erase(st.find_by_order(st.order_of_key(num)));
+        st1.erase(st1.find_by_order(st1.order_of_key(num)));
     }
 
 
     // Checking presence of any element
-    if(st.order_of_key(num)==st.size())
+    if(st1.order_of_key(num)==st1.size())
     {
         cout<<num<<" is not present\n";
     }
-    else if( st.order_of_key(num)==0 && num!=(*st.begin()) )  
+    else if( st1.order_of_key(num)==0 && num!=(*st1.begin()) )  
     {
         cout<<num<<" is not present\n";
     }
     else
     {
-        cout<<"present at index "<<st.order_of_key(num)<<endl;
+        cout<<"present at index "<<st1.order_of_key(num)<<endl;
     }
 
 }
