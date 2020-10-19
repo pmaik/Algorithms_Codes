@@ -1,5 +1,5 @@
 /*
-    lps function used in KMP algorithm
+    KMP algorithm long with LPS function....
 */
 
 
