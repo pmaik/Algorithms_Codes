@@ -50,7 +50,7 @@ vector<ll> LPS_function(string s)
         }
     }
     
-    retunr lps;
+    return lps;
 }
 
 int find_Pat(string text, string pat){
