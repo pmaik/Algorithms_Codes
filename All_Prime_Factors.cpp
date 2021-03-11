@@ -8,7 +8,7 @@ vector<ll> all_Prime_Factors(ll num)
   
     vector<ll>primeFact;
     ll n = num;
-    for(ll i = 2; i*i<=num; i++)
+    for(ll i = 2; i*i<=num && n>1; i++)
     {
         if(n % i == 0)
         {
